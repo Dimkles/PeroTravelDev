@@ -1,0 +1,124 @@
+//====================================================================================================
+
+.header {
+	background-color: #0498ddad;
+	z-index: 4;
+	position: fixed;
+	left: 0;
+	right: 0;
+	&__logo {
+		z-index: 5;
+	}
+	&__container {
+		height: 110px;
+		@include adaptiveValue("height", 100, 60);
+		display: flex;
+		gap: 50px;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+//====================================================================================================
+
+.menu {
+	&__list {
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+	&__link {
+		font-weight: 500;
+		line-height: 17px;
+		color: #fff;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: $yellow;
+		}
+	}
+	@media (max-width: $mobile) {
+		position: fixed;
+		left: 0;
+		top: -200%;
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s ease 0s;
+		background-color: #0498dd;
+		&__list {
+			flex-direction: column;
+			align-items: center;
+			gap: 50px;	
+		}
+		.menu-open & {
+
+			top: 0;
+			&__body {
+				overflow: auto;
+				justify-content: center;
+				padding-top: rem(120);
+				padding-bottom: rem(30);
+				height: 100%;
+				width: 100%;
+				z-index: 10;
+			}
+			
+			&__link {
+				font-size: 30px;
+				color: #FCFDFE;
+			}
+		}
+	}
+}
+
+
+
+//Burger
+
+.icon-menu {
+	background: none;
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(40);
+		height: rem(25);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(5);
+			background-color: #FFFFFF;
+			border-radius: 10px;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(2));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(3));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(2));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

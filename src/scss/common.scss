@@ -1,0 +1,22 @@
+// Заголовки, общие БЄМ блоки и проче...
+.button {
+    padding: 16px 53px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    background: linear-gradient(92.71deg, #0499dd 0%, #17C1BC 100%);
+    border-radius: 60px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        background: linear-gradient(92.71deg, #37dbd6 0%, #197caa 100%);
+    }
+}
+.title {
+    font-size: rem(24);
+    color: $blue;
+    line-height: rem(24);
+    font-weight: 700;
+
+}
