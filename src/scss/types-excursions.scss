@@ -1,0 +1,35 @@
+.types-excursions {
+    padding: 75px 0;
+    &__title {
+        margin-bottom: 90px;
+    }
+    &__content {
+        text-align: center;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+    &-type {
+        text-align: left;
+        flex: 1 1 400px;
+        display: flex;
+        margin-bottom: 20px;
+        &__image {
+            width: 75px;
+            margin-right: 20px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+    }
+    &__text {
+        margin: 0 auto;
+        @include adaptiveValue("margin-bottom", 20, 40);
+        max-width: 550px;
+    }
+}

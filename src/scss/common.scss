@@ -9,6 +9,10 @@
     display: inline-flex;
     align-items: center;
     transition: all 0.3s ease 0s;
+    & img {
+            display: inline-block;
+            margin-left: 5px;
+    }
     &:hover {
         background: linear-gradient(92.71deg, #37dbd6 0%, #197caa 100%);
     }

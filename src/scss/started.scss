@@ -71,12 +71,6 @@
             -webkit-text-fill-color: transparent;
         }  
     }
-    &__button {
-        & img {
-            display: inline-block;
-            margin-left: 5px;
-        }
-    }
     &__slider {
         position: relative;
         z-index: 3;
