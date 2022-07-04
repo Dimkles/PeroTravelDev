@@ -103,81 +103,81 @@
         }
         &__navigation {
         }
-        &__buttons {
-            display: inline-block;
-            & button {
-                position: relative;
-                width: 22px;
-                height: 43px;
+        // &__buttons {
+        //     display: inline-block;
+        //     & button {
+        //         position: relative;
+        //         width: 22px;
+        //         height: 43px;
 
-            }
-            & .swiper-button-prev {
-                margin-right: 22px;
-                &::after,&::before {
-                    content: '';
-                    position: absolute;
-                    width: 25px;
-                    height: 3px;
-                    background: $blue;
-                    border-radius: 5px;
-                }
-                &.swiper-button-disabled {
-                    &::after,&::before {
-                        background: #D4D4D4;
-                    }
-                }
+        //     }
+        //     & .swiper-button-prev {
+        //         margin-right: 22px;
+        //         &::after,&::before {
+        //             content: '';
+        //             position: absolute;
+        //             width: 25px;
+        //             height: 3px;
+        //             background: $blue;
+        //             border-radius: 5px;
+        //         }
+        //         &.swiper-button-disabled {
+        //             &::after,&::before {
+        //                 background: #D4D4D4;
+        //             }
+        //         }
 
-                &::after {
-                    transform: rotate(-45deg);
-                    left: 0;
-                    top: 12px;
-                }
-                &::before {
-                    left: 0;
-                    bottom: 12px;
-                    transform: rotate(45deg);
-                }
-            }
-            & .swiper-button-next {
-                &::after,&::before {
-                    content: '';
-                    position: absolute;
-                    width: 25px;
-                    height: 3px;
-                    background: $blue;
-                    border-radius: 5px;
-                }
-                &.swiper-button-disabled {
-                    &::after,&::before {
-                        background: #D4D4D4;
-                    }
-                }
-                &::after {
-                    transform: rotate(45deg);
-                    right: 0;
-                    top: 12px;
-                }
-                &::before {
-                    right: 0;
-                    bottom: 12px;
-                    transform: rotate(-45deg);
-                }
-            }
-        }
-        &__scrollbar {
-            position: relative;
-            top: -23.8px;
-            left: 120px;
-            flex: 1 1 auto;
-            height: 4px;
-            border-radius: 10px;
-            background: #D4D4D4;
-            & .swiper-scrollbar-drag {
-                height: 4px;
-                border-radius: 10px;
-                background: $blue;
-                cursor: pointer;
-            }
-        }
+        //         &::after {
+        //             transform: rotate(-45deg);
+        //             left: 0;
+        //             top: 12px;
+        //         }
+        //         &::before {
+        //             left: 0;
+        //             bottom: 12px;
+        //             transform: rotate(45deg);
+        //         }
+        //     }
+        //     & .swiper-button-next {
+        //         &::after,&::before {
+        //             content: '';
+        //             position: absolute;
+        //             width: 25px;
+        //             height: 3px;
+        //             background: $blue;
+        //             border-radius: 5px;
+        //         }
+        //         &.swiper-button-disabled {
+        //             &::after,&::before {
+        //                 background: #D4D4D4;
+        //             }
+        //         }
+        //         &::after {
+        //             transform: rotate(45deg);
+        //             right: 0;
+        //             top: 12px;
+        //         }
+        //         &::before {
+        //             right: 0;
+        //             bottom: 12px;
+        //             transform: rotate(-45deg);
+        //         }
+        //     }
+        // }
+        // &__scrollbar {
+        //     position: relative;
+        //     top: -23.8px;
+        //     left: 120px;
+        //     flex: 1 1 auto;
+        //     height: 4px;
+        //     border-radius: 10px;
+        //     background: #D4D4D4;
+        //     & .swiper-scrollbar-drag {
+        //         height: 4px;
+        //         border-radius: 10px;
+        //         background: $blue;
+        //         cursor: pointer;
+        //     }
+        // }
     }
 }

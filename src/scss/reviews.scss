@@ -1,0 +1,87 @@
+.reviews {
+    &__title {
+        margin-bottom: 90px;
+    }
+    padding: 75px 0;
+    
+    &__wrapper {
+        margin-bottom: 40px;
+    }
+    
+}
+.review {
+    position: relative;
+    @include adaptiveValue("width", 740, 280);
+    display: flex;
+    padding: 38px 27px 38px 45px;
+    background: #EDEDED;
+    border-radius: 10px;
+    @media (max-width: $tablet) {
+        padding: 26px 17px 26px 31px;
+    }
+    @media (max-width: $mobile) {
+        padding: 32px 24px 48px 28px;
+        flex-wrap: wrap;
+    }
+    &__image {
+        flex: 0 0 245px;
+        height: 245px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-right: 28px;
+        position: relative;
+        @media (max-width: $tablet) {
+            flex: 0 0 168px;
+            height: 168px;
+        }
+        @media (max-width: $mobile) {
+            flex: 0 0 80px;
+            height: 80px;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &-shading {
+            background: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        flex: 1 1 auto;
+        position: relative;
+        z-index: 10;
+    }
+    &__quotation-marks {
+        position: absolute;
+        @include adaptiveValue("right", 24, 0);
+        @include adaptiveValue("bottom", 20, 0);
+            
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #282828;
+        display: inline-block;
+        @include adaptiveValue("margin-bottom", 20, 10);
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #282828;
+        position: relative;
+        z-index: 10;
+    }
+}
