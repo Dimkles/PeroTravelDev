@@ -1,3 +1,100 @@
 //====================================================================================================
 
+.footer {
+    padding: 30px 0;
+    background: #EDEDED;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+            
+        }
+        @media (max-width: $mobileSmall) {
+            align-items: start;
+        }
+    }
+    &__logo {
+       @media (max-width: $mobile) {
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        @media (max-width: $mobileSmall) {
+            order: 1;
+        }
+    }
+    &__menu {
+        
+    }
+}
+.menu-footer {
+    &__item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #282828;
+    }
+    @media (max-width: $mobileSmall) {
+        order: 3;
+    }
+    @media (max-width: 375px) {
+        order: 4;
+        flex: 1 1 100%;
+    }
+}
+.contacts-footer {
+    &__item {
+        position: relative;
+        padding-left: 30px;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+        & img {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: -3px;
+            left: 0;
+        }
+        &__link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #282828;
+        }
+    }
+    @media (max-width: $mobileSmall) {
+        order: 4;
+    }
+    @media (max-width: 375px) {
+        order: 3;
+        flex: 1 1 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.contacts-footer-social {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    @media (max-width: $mobileSmall) {
+        order: 2;
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+}
+
+
+
 //====================================================================================================

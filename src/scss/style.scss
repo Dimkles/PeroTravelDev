@@ -141,3 +141,7 @@ body {
 @import "connection";
 // Подключение стилей отдельных страниц
 @import "home";
+// ПОдлючение стилей для страницы экскурсии
+
+@import "excursions/started";
+@import "excursions/excursions-categories";
