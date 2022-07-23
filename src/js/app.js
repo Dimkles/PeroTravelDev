@@ -76,11 +76,11 @@ import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы */
 /* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formFieldsInit({ viewPass: false });
+flsForms.formFieldsInit({ viewPass: false });
 
 /* Oтправка формы */
 /* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formSubmit();
+flsForms.formSubmit();
 
 /* Модуль формы "колличество" */
 // flsForms.formQuantity();
@@ -98,7 +98,7 @@ import * as flsForms from "./files/forms/forms.js";
 Документация плагина: https://github.com/RobinHerbots/inputmask
 Сниппет(HTML):
 */
-// import "./files/forms/inputmask.js";
+import "./files/forms/inputmask.js";
 
 /* Модуль работы с ползунком */
 /*

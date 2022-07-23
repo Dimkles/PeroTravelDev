@@ -1,0 +1,64 @@
+.connection {
+    background-image: url('@img/connection/connection_bg.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 132px 95px 143px 105px;
+    @include adaptiveValue("padding-top", 132, 122 );
+    @include adaptiveValue("padding-right", 95, 22);
+    @include adaptiveValue("padding-bottom", 143, 128);
+    @include adaptiveValue("padding-left", 105, 23);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+        display: inline-block;
+        margin-bottom: 6px;
+
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFC700;
+        display: inline-block;
+        margin-bottom: 45px;
+    }
+    & input {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #fff;
+        height: 15px;
+        outline: none;
+        @include adaptiveValue("width", 360, 225);
+        &:not(:last-child) {
+            margin-bottom: 45px;
+        }
+        &:last-child {
+            margin-bottom: 83px;
+        }
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    &__button {
+        width: fit-content;
+        @media (max-width: $mobileSmall) {
+                align-self: center;
+            }
+    }
+}

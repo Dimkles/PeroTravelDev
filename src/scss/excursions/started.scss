@@ -1,0 +1,13 @@
+.excursions-started {
+    background-image: url("@img/excursions/started/started_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 122px 0 39px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 72px;
+        @include adaptiveValue("font-size", 72, 36);
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+}
